@@ -42,3 +42,34 @@ function dateprint()
 
     document.getElementById("date").innerHTML= date + " " + time + " " + day;
 }
+
+function start()
+{
+    document.getElementById("button").style.display="";
+    document.getElementById("tree").style.display="none";
+}
+
+function karacsonyfaizalodas()
+{
+    document.getElementById("button").style.display="none";
+    document.getElementById("tree").style.display="";
+    document.getElementById("button2").style.display="";
+}
+
+function matek()
+{
+    var szamok = new Array();
+
+    alert("Bekérek öntől 5 számot.")
+
+    szamok[0] = parseInt(prompt("Kérem írjon be egy számot!"));
+    szamok[1] = parseInt(prompt("Kérem írjon be még egy számot!"));
+    szamok[2] = parseInt(prompt("Kérem írjon be még egy számot!"));
+    szamok[3] = parseInt(prompt("Kérem írjon be még egy számot!"));
+    szamok[4] = parseInt(prompt("Kérem írjon be még egy számot!"));
+
+    document.getElementById("button2").style.display="none";
+
+    document.getElementById("numbers").innerHTML="A számok a következők: " + szamok[0] + "; " + szamok[1] + "; " + szamok[2] + "; " + szamok[3] + "; " + szamok[4] + ";";
+    document.getElementById("numbers2").innerHTML="A számok négyzetei a következők: " + szamok[0] * szamok[0]+ "; " + szamok[1] * szamok[1] + "; " + szamok[2] * szamok[2] + "; " + szamok[3] * szamok[3] + "; " + szamok[4] * szamok[4] + ";";
+}

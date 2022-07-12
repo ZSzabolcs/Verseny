@@ -12,7 +12,7 @@
 
         <title>Verseny</title>
     </head>
-    <body onload="dateprint()">
+    <body onload="dateprint(); start()">
         <div class="container my-4">
             <h1>
                 Bitfaragó verseny
@@ -70,6 +70,21 @@
                 
             </p>
             <button type="button" onclick="dateprint()">Dátum frissítése</button>
+            <h2>
+                Karácsonyfaizálódó gomb
+            </h2>
+            <button type="button" onclick="karacsonyfaizalodas()" id="button">Ez az a gomb</button>
+            <img src="karacsonyfa.jpg" alt="Karácsonyfa" title="Karácsonyfa" id="tree">
+            <h2>
+                Egy kis matek
+            </h2>
+            <button type="button" onclick="matek()" id="button2">Kezdés</button>
+            <p id="numbers" class="mx-2">
+
+            </p>
+            <p id="numbers2" class="my-2 mx-2">
+
+            </p>
         </div>
     </body>
 </html>
