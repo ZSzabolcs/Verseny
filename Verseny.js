@@ -77,7 +77,7 @@ function matek()
 
 function matek2()
 {
-    var x = parseInt(prompt("Kérem írjon be egy tizedestört alakú számot! (A tizedesvessző hejére tegyen egy pontot!"));
+    var x = parseInt(prompt("Kérem írjon be egy tizedestört alakú számot! (A tizedesvessző helyére tegyen egy pontot!"));
 
     xup = Math.ceil(x);
     xdown = Math.floor(x);
