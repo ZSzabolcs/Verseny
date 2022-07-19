@@ -48,7 +48,6 @@ function start()
     document.getElementById("button").style.display="";
     document.getElementById("tree").style.display="none";
     document.getElementById("button2").style.display="";
-    document.getElementById("button3").style.display="";
 }
 
 function karacsonyfaizalodas()
@@ -77,22 +76,22 @@ function matek()
 
 function matek2()
 {
-    var x = parseInt(prompt("Kérem írjon be egy tizedestört alakú számot! (A tizedesvessző hejére tegyen egy pontot!"));
+    var x = prompt("Kérem írjon be egy tizedestört alakú számot! (A tizedesvessző helyére írjon pontot!)")
 
-    xup = Math.ceil(x);
-    xdown = Math.floor(x);
+    var xrounded = 0;
 
-    if(xup <= x+0.5)
+    var xup = Math.ceil(Number(x));
+    var xdown = Math.floor(Number(x));
+
+    if(xup <= Number(x) + 0.5)
     {
         xrounded = xup;
     }
 
-    else if(x+0.5 < xup)
+    else if(Number(x) + 0.5 < xup)
     {
         xrounded = xdown;
     }
-
-    document.getElementById("button3").style.display="none";
 
     document.getElementById("numbers3").innerHTML="A beírt szám egészre kerekített értéke: " + xrounded + ";";
 }
