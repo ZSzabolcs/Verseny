@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head lang="hu">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> 
+        <link rel="stylesheet" href="Verseny.css">
+
+        <script src="../Verseny/Verseny.js"></script>
+
+        <title>Verseny</title>
+    </head>
+    <body onload="dateprint(); start()">
+        <div class="container my-4">
+            <h1 class="focim">
+                Bitfaragó verseny
+            </h1>
+            <h2>
+                Adatok
+            </h2>
+            <ul>
+                <li>
+                    <p>
+                        Iskola: Miskolci SZC Kandó Kálmán Informatikai Technikum
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Csapat neve: Kandó Kommandó
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Felkészítő tanár: Kasza László Róbert
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Kezdés: 2022.07.08
+                    </p>
+                </li>
+            </ul>
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-title text-center">
+                        Zelenák Szabolcs
+                    </p>
+                    <p class="card-text">
+                        <i>
+                            A festő ecsettel fest képeket, a költő szavakkal...
+                        </i>
+                    </p>
+                </div>
+                <img src="profilkep.jpg" alt="Zelenák Szabolcs" title="Zelenák Szabolcs" class="card-img-bottom">
+            </div>
+            <h2>
+                Programozási segédlet
+            </h2>
+            <ul>
+                <li>
+                    <a href="https://w3schools.com" target="_Blank">W3SCHOOLS</a>
+                </li>
+                <li>
+                    <a href="http://verseny.mik.uni-pannon.hu/2021_kesz/elso/index.php" target="_Blank">Bitfaragó verseny</a>
+                </li>
+            </ul>
+            <h2>
+                Aktuális dátum
+            </h2>
+            <p id="date">
+                
+            </p>
+            <button type="button" onclick="dateprint()">Dátum frissítése</button>
+            <h2>
+                Karácsonyfaizálódó gomb
+            </h2>
+            <button type="button" onclick="karacsonyfaizalodas()" id="button">Ez az a gomb</button>
+            <img src="karacsonyfa.jpg" alt="Karácsonyfa" title="Karácsonyfa" id="tree">
+            <h1 class="my-5">
+                Egy kis matek...
+            </h1>
+            <h2>
+                Négyzetre emelés
+            </h2>
+            <button type="button" onclick="matek()" id="button2">Kezdés</button>
+            <p id="numbers" class="mx-2">
+
+            </p>
+            <p id="numbers2" class="my-2 mx-2">
+
+            </p>
+            <h2>
+                Kerekítés
+            </h2>
+            <button type="button" onclick="matek2()">Kezdés</button>
+            <p id="numbers3" class="my-3">
+
+            </p>
+            <h2>
+                Átlagszámolás
+            </h2>
+            <button type="button" onclick="matek3()">Kezdés</button>
+            <p id="numbers4" class="my-3">
+
+            </p>
+            <p id="numbers5" class="my-3">
+
+            </p>
+            <h2>
+                Másodfokú egyenlet
+            </h2>
+            <button type="button" onclick="matek4()">Kezdés</button>
+            <p id="numbers6" class="my-3">
+
+            </p>
+            <p id="numbers7" class="my-3">
+
+            </p>
+            <p id="keplet">
+                <img src="megoldokeplet.svg" alt="A másodfokú egyenlet megoldóképlete">
+            </p>
+            <p id="numbers8" class="my-3">
+
+            </p>
+            <p id="numbers9" class="egesz">
+
+            </p>
+            <div class="tort">
+                <p id="numbers10" class="mx-5 szamlalo">
+                    
+                </p>
+                <p id="numbers11" class="mx-5 nevezo">
+                    
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
